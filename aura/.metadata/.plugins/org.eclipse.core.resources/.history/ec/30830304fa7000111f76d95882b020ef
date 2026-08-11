@@ -1,0 +1,48 @@
+package switchcase;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        int cor = 0;
+        String outra = "";
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Escolha a sua cor preferida:");
+        System.out.println("Azul");
+        System.out.println("Verde");
+        System.out.println("Vermelho");
+        System.out.println("Amarelo");
+        System.out.println("Marrom");
+        System.out.println("(Primeira letra em maiuculo)");
+
+ 
+        outra = sc.next();
+
+        switch (outra) {
+        case "Azul":
+        	System.out.println("Sua cor preferida é azul!");
+        	break;
+        case "Verde":
+        	System.out.println("Sua cor preferida é verde!");
+        	break;
+        case "Vermelho":
+        	System.out.println("Sua cor preferida é vermelho!");
+        	break;
+        case "Amarelo":
+        	System.out.println("Sua cor preferida é amarelo!");
+        	break;
+        case "Marrom":
+        	System.out.println("Sua cor preferida é marrom!");
+        	break;
+        default:
+        	System.out.println("Sua cor favorita (" + outra + ") esta fora das opções.");
+        break;
+        }
+
+        sc.close();
+    }
+}
+
+

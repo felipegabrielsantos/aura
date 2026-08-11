@@ -1,0 +1,49 @@
+package switchcase;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        int cor = 0;
+        String outra = "";
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Escolha a sua cor preferida:");
+        System.out.println("Azul (1)");
+        System.out.println("Verde (2)");
+        System.out.println("Vermelho (3)");
+        System.out.println("Amarelo (4)");
+        System.out.println("Marrom (5)");
+        System.out.println("outra cor (escreva)");
+        System.out.print("Digite o número da sua opção: ");
+
+ 
+        cor = sc.nextInt();
+
+        switch (cor) {
+        case 1:
+        	System.out.println("Sua cor preferida é azul!");
+        	break;
+        case 2:
+        	System.out.println("Sua cor preferida é verde!");
+        	break;
+        case 3:
+        	System.out.println("Sua cor preferida é vermelho!");
+        	break;
+        case 4:
+        	System.out.println("Sua cor preferida é amarelo!");
+        	break;
+        case 5:
+        	System.out.println("Sua cor preferida é marrom!");
+        	break;
+        default:
+        	System.out.println("Você não escolheu uma cor válida!");
+        break;
+        }
+
+        scanner.close();
+    }
+}
+
+

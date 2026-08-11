@@ -1,0 +1,31 @@
+package switchcase;
+import java.util.Scanner;
+public class main {
+	public static void main(String[] args) {
+		
+		cor=Integer.parseInt(JOptionPane.showInputDialog("Escolha a sua cor preferida:"
+		+ " \n 1 - Azul \n 2 - Verde \n 3 - Vermelho \n 4 - Amarelo \n 5 - Marrom"));
+		switch(cor)
+		{
+		case 1:
+		JOptionPane.showMessageDialog(null, "Sua cor preferida é azul!");
+		break;
+		case 2:
+		JOptionPane.showMessageDialog(null, "Sua cor preferida é verde!");
+		break;
+		case 3:
+		JOptionPane.showMessageDialog(null, "Sua cor preferida é vermelho!");
+		break;
+		case 4:
+		JOptionPane.showMessageDialog(null, "Sua cor preferida é amarelo!");
+		break;
+		case 5:
+		JOptionPane.showMessageDialog(null, "Sua cor preferida é azul!");
+		break;
+		default:
+		JOptionPane.showMessageDialog(null, "Você não ter cor preferida!");
+		break;
+		}
+	}
+}
+

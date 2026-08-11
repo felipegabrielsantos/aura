@@ -1,0 +1,23 @@
+package switchcase;
+import java.util.Scanner;
+public class main {
+	public static void main(String[] args) {
+		
+		String cor;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		System.out.print("escolha sua cor preferida");
+		System.out.println("Rosa (1)");
+		System.out.println("Laranja (2)");
+		System.out.println("Azul (3)");
+		System.out.println("Amarelo (4)");
+		System.out.println("Verde (5)");
+		
+		
+		
+	}
+}
+

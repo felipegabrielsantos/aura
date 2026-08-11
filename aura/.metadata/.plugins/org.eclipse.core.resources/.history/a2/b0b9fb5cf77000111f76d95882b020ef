@@ -1,0 +1,50 @@
+package switchcase;
+import javax.swing.JOptionPane;
+
+public class main {
+    public static void main(String[] args) {
+        int cor = 0;
+        
+        try {
+            // Abre a janela para capturar a escolha do usuário
+            String input = JOptionPane.showInputDialog("Escolha a sua cor preferida:" 
+                    + " \n 1 - Azul \n 2 - Verde \n 3 - Vermelho \n 4 - Amarelo \n 5 - Marrom");
+            
+            // Verifica se o usuário cancelou ou fechou a janela
+            if (input == null) {
+                JOptionPane.showMessageDialog(null, "Programa encerrado.");
+                return;
+            }
+            
+            // Converte o texto digitado para número inteiro
+            cor = Integer.parseInt(input);
+            
+            // Estrutura de decisão para exibir a cor correta
+            switch(cor) {
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Sua cor preferida é azul!");
+                    break;
+                case 2:
+                    JOptionPane.showMessageDialog(null, "Sua cor preferida é verde!");
+                    break;
+                case 3:
+                    JOptionPane.showMessageDialog(null, "Sua cor preferida é vermelho!");
+                    break;
+                case 4:
+                    JOptionPane.showMessageDialog(null, "Sua cor preferida é amarelo!");
+                    break;
+                case 5:
+                    JOptionPane.showMessageDialog(null, "Sua cor preferida é marrom!"); // CORRIGIDO
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Você não escolheu uma cor válida!");
+                    break;
+            }
+            
+        } catch (NumberFormatException e) {
+            // Mensagem de erro caso o usuário digite letras ou símbolos
+            JOptionPane.showMessageDialog(null, "Erro: Por favor, digite apenas números!");
+        }
+    }
+}
+
